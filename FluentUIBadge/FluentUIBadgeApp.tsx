@@ -48,7 +48,7 @@ const FluentUIBadgeApp = (props:IFluentUIBadgeProps): JSX.Element => {
 
     return (
         
-        <FluentProvider theme={activetheme}>
+        <FluentProvider theme={activetheme} style={{background:"#00000000"}}>
             {getInputs().map((input,index) => 
                 <Badge
                     key={`badge-${index}.`}
